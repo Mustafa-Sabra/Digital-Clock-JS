@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: consolas;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+.clock {
+  border: 1px solid #000;
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
+}
+.clock h2 {
+  font-size: 50px;
+}
+.clock .time {
+  display: flex;
+}
+.clock .time div {
+  width: 300px;
+  margin: 20px;
+  font-size: 30px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+.clock .time div span {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  border-bottom: 1px solid rgba(0, 0, 0.2, 0);
+  margin-bottom: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.clock .time div:nth-of-type(1) {
+  background-color: #1d82d4;
+}
+.clock .time div:nth-of-type(1) span {
+  background-color: #2196f3;
+}
+.clock .time div:nth-of-type(2) {
+  background-color: #1d82d4;
+}
+.clock .time div:nth-of-type(2) span {
+  background-color: #2196f3;
+}
+.clock .time div:nth-of-type(3) {
+  background-color: #ec0062;
+}
+.clock .time div:nth-of-type(3) span {
+  background-color: #ff006a;
+}
